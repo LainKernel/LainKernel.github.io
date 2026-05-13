@@ -3,29 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Лабораторные</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            background: url(cloud-side-painted-1.jpg);
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        .main{
+            display: grid;
+            grid-template:repeat(3, 1fr);
+            grid-auto-flow: row;
+            gap: 25px;
+            padding: 20px;
+        }
+        .bord{
+            background-color: rgb(243, 246, 248);
+            border: 2px solid #75b7fe5b;
+            border-radius: 10px;
+            padding: 20px;  
+            box-shadow: 0 10px 5px rgba(0,0,0,0.1);
+            
+        }
+
+        .bord h2{
+            font-size: 25px;
+            color: #272120;
+        }
+        .lablink{
+            display: inline-block;
+            margin: 0 5px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+        }
+        @media (min-width: 600px) {
+            .main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 992px) {
+            .main {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Лабораторные работы</h1>
-    <h2>Лабораторная работа 1</h2>
-    <a href="lab1/lab1_1.html">Задание 1</a>
-    <a href="lab1/lab1_2.html">Задание 2</a>
-    <a href="lab1/doc.html">Задание 3</a>
-    <a href="lab1/lab1_4.html">Задание 4</a>
-    <a href="lab1/lab1_5.html">Задание 5</a>
-    <h2>Лабораторная работа 2</h2>
-    <a href="lab2/lab2_1.html">Задание 1</a>
-    <a href="lab2/lab2_2.html">Задание 2</a>
-    <a href="lab2/lab2_33.html">Задание 3</a>
-    <a href="lab2/lab2_4.html">Задание 4</a>
-    <a href="lab2/lab2_5.html">Задание 5</a>
-    <h2>Лабораторная работа 3</h2>
-    <a href="lab3/lab3_1.html">Задание 1</a>
-    <a href="lab3/lab3_2.html">Задание 2-5</a>
-    <h2>Лабораторная работа 4</h2>
-    <a href="lab4/lab4_1.html">Задание 1</a>
-    <a href="lab4/lab4_2.html">Задание 2</a>
-    <a href="lab4/lab4_2_3.html">Задание 2</a>
-    <a href="lab4/lab4_2_4.html">Задание 2</a>
+    <h1>Список лабораторных работ</h1>
+    <div class="main">
+    <article class="bord">
+    <h2>Лабораторная работа №1</h2>
+    <a href="lab1/lab1_1.html" class="lablink">Задание 1</a>
+    <a href="lab1/lab1_2.html" class="lablink">Задание 2</a>
+    <a href="lab1/doc.html" class="lablink">Задание 3</a>
+    <a href="lab1/lab1_4.html" class="lablink">Задание 4</a>
+    <a href="lab1/lab1_5.html" class="lablink">Задание 5</a>
+    </article>
+    <article class="bord">
+    <h2>Лабораторная работа №2</h2>
+    <a href="lab2/lab2_1.html" class="lablink">Задание 1</a>
+    <a href="lab2/lab2_2.html" class="lablink">Задание 2</a>
+    <a href="lab2/lab2_33.html" class="lablink">Задание 3</a>
+    <a href="lab2/lab2_4.html" class="lablink">Задание 4</a>
+    <a href="lab2/lab2_5.html" class="lablink">Задание 5</a>
+    </article>
+    <article class="bord">
+    <h2>Лабораторная работа №3</h2>
+    <a href="lab3/lab3_1.html" class="lablink">Задание 1</a>
+    <a href="lab3/lab3_2.html" class="lablink">Задание 2-5</a>
+    </article>
+    <article class="bord">
+    <h2>Лабораторная работа №4</h2>
+    <a href="lab4/lab4_1.html" class="lablink">Задание 1</a>
+    <a href="lab4/lab4_2.html" class="lablink">Задание 2</a>
+    <a href="lab4/lab4_2_3.html" class="lablink">Задание 2</a>
+    <a href="lab4/lab4_2_4.html" class="lablink">Задание 2</a>
+    </article>
+    <article class="bord">
+        <h2>Лабораторная работа №5</h2>
+        <a href="lab5/lab5_1.html" class="lablink">Задание 1</a>
+        <a href="lab5/lab5_2.html" class="lablink">Задание 2</a>
+        <a href="lab5/lab5_3.html" class="lablink">Задание 3</a>
+        <a href="lab5/lab5_4.html" class="lablink">Задание 4</a>
+        <a href="lab5/lab5_5.html" class="lablink">Задание 5</a>
+    </article>
+    </div>
 </body>
 </html>
